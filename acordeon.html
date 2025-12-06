@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accordion</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <style>
+      body {
+        background-color: white;
+        font-family: sans-serif;
+      }
+
+      #acordeon .ui-accordion-header {
+        background-color: white;
+        color: blue;
+        border: none;
+        cursor: pointer;
+      }
+
+      #acordeon .ui-accordion-header-active {
+        color: #ffd700; /* yellow */
+      }
+
+      #acordeon .ui-accordion-content {
+        background-color: white;
+      }
+    </style>
+
+    <script>
+      $(function () {
+        $("#acordeon").accordion({
+          heightStyle: "content",
+          collapsible: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="acordeon">
+      <h3>Seccion 1</h3>
+      <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+      <h3>Seccion 1</h3>
+      <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+      <h3>Seccion 1</h3>
+      <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+      <h3>Seccion 1</h3>
+      <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+    </div>
+  </body>
+</html>
